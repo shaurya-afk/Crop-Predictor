@@ -5,9 +5,6 @@ import torch.nn.functional as F
 
 import joblib
 
-
-
-
 class Model(nn.Module):
     def __init__(self, in_features=7, h1=16, h2=16, out_features=22):
         super(Model, self).__init__()
@@ -33,16 +30,8 @@ app = Flask(__name__)
 def home():
     return "Welcome to the Crop Prediction API"
 
-# class_names = [
-#     "Wheat", "Rice", "Corn", "Barley", "Peas", "Potato", 
-#     "Tomato", "Banana", "Apple", "Orange", "Grapes",
-#     "Mango", "Sugarcane", "Cotton", "Coffee", "Tea", 
-#     "Jute", "Soybean", "Sunflower", "Cabbage", "Carrot", "Onion"
-# ]
-
 @app.route("/predict", methods=['POST'])
 def predict():
-    # Get data from the request
     n = float(request.json.get('N'))
     p = float(request.json.get('P'))
     k = float(request.json.get('K'))
