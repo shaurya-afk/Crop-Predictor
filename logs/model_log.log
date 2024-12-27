@@ -1,0 +1,765 @@
+2024-12-26T14:09:27,918 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9002
+2024-12-26T14:09:27,920 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9006
+2024-12-26T14:09:27,939 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:27,939 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:27,939 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - [PID]4340
+2024-12-26T14:09:27,939 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:27,940 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:27,940 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:27,940 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:27,940 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:27,941 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:27,941 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:27,941 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:27,942 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:27,963 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9006).
+2024-12-26T14:09:27,967 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9007
+2024-12-26T14:09:27,983 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:27,983 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - [PID]2260
+2024-12-26T14:09:27,984 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:27,984 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:27,987 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9007).
+2024-12-26T14:09:28,029 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:28,029 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:28,056 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:28,056 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:28,057 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:28,057 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:28,057 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:28,057 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:28,059 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:28,059 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:28,060 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:28,060 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:28,067 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,067 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,068 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,068 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,067 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,068 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:28,068 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,068 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,068 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:28,069 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,069 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:28,069 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:28,069 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:28,069 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:28,070 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:28,071 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:28,071 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,071 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,072 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:28,072 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:28,072 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:28,073 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:28,073 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,073 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:28,073 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:28,073 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,073 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:28,074 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:28,074 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:28,074 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,075 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:28,076 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:28,076 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:28,076 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:28,076 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,076 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:28,133 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9001
+2024-12-26T14:09:28,149 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:28,150 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,151 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,151 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,151 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,151 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:28,151 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:28,152 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:28,160 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9003
+2024-12-26T14:09:28,182 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:28,183 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,183 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,183 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,183 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,183 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:28,183 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:28,184 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:28,258 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-12-26T14:09:28,283 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:28,285 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,285 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,286 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,286 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,286 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:28,288 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:28,288 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:28,328 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9005
+2024-12-26T14:09:28,346 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:28,347 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - [PID]14924
+2024-12-26T14:09:28,347 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:28,348 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:28,365 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9005).
+2024-12-26T14:09:28,382 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:28,394 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:28,394 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:28,395 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:28,395 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:28,396 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:28,400 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,400 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,400 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,401 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,401 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:28,401 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:28,401 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:28,401 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:28,402 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,402 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:28,402 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:28,402 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,402 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:28,403 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:28,403 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:28,404 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:28,404 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:28,404 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:28,462 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9004
+2024-12-26T14:09:28,477 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:28,478 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:28,479 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:28,479 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:28,479 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:28,479 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:28,479 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:28,479 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:34,918 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9006
+2024-12-26T14:09:34,938 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:34,939 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - [PID]13380
+2024-12-26T14:09:34,939 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:34,940 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:34,943 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9006).
+2024-12-26T14:09:34,956 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:34,967 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:34,967 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:34,968 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:34,969 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:34,970 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:34,974 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:34,975 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:34,975 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:34,975 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:34,975 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:34,975 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:34,975 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:34,976 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:34,977 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:34,977 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:34,991 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9007
+2024-12-26T14:09:35,006 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,007 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - [PID]17976
+2024-12-26T14:09:35,007 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:35,008 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:35,016 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9007).
+2024-12-26T14:09:35,030 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:35,040 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:35,041 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:35,041 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:35,042 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:35,042 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:35,046 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,046 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,046 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,046 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,046 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:35,047 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:35,048 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:35,048 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:35,314 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9005
+2024-12-26T14:09:35,332 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,333 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - [PID]17504
+2024-12-26T14:09:35,333 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:35,333 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:35,337 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9005).
+2024-12-26T14:09:35,349 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:35,359 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:35,360 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:35,360 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:35,361 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:35,361 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:35,366 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:35,367 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:35,527 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9003
+2024-12-26T14:09:35,543 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:35,545 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:35,546 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9001
+2024-12-26T14:09:35,564 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:35,565 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:35,566 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9002
+2024-12-26T14:09:35,586 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,588 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,588 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,588 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,588 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,588 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:35,588 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:35,589 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:35,682 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-12-26T14:09:35,697 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,698 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,698 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,698 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,698 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,699 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:35,699 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:35,699 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:35,840 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9004
+2024-12-26T14:09:35,855 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:35,856 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:35,856 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:35,856 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:35,856 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:35,856 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:35,857 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:35,857 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:41,305 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9006
+2024-12-26T14:09:41,313 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9007
+2024-12-26T14:09:41,330 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:41,331 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - [PID]4556
+2024-12-26T14:09:41,331 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:41,332 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:41,335 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9006).
+2024-12-26T14:09:41,338 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:41,339 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - [PID]1948
+2024-12-26T14:09:41,339 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:41,340 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:41,343 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9007).
+2024-12-26T14:09:41,347 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:41,357 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:41,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:41,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:41,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:41,363 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:41,363 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:41,369 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:41,371 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,371 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:41,371 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:41,372 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:41,373 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:41,374 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:41,379 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:41,380 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:41,380 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:41,380 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:41,380 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:41,380 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:41,380 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:41,381 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:41,381 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,381 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:41,381 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:41,381 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,381 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:41,382 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:41,382 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:41,382 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:41,382 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,382 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:41,792 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9005
+2024-12-26T14:09:41,810 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:41,811 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - [PID]9864
+2024-12-26T14:09:41,811 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:41,812 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:41,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9005).
+2024-12-26T14:09:41,828 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:41,840 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:41,841 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:41,842 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:41,843 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:41,843 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:41,849 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:41,849 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:41,849 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:41,849 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:41,849 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:41,856 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:41,857 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:41,857 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:41,857 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:41,857 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:42,838 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9001
+2024-12-26T14:09:42,860 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:42,861 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:42,862 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9002
+2024-12-26T14:09:42,865 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-12-26T14:09:42,883 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:42,884 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:42,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:42,885 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:42,885 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:42,885 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:42,885 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:42,886 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:42,886 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:42,886 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:42,938 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9003
+2024-12-26T14:09:42,956 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:42,958 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:43,098 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9004
+2024-12-26T14:09:43,122 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:43,123 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:48,282 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9007
+2024-12-26T14:09:48,293 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9006
+2024-12-26T14:09:48,310 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:48,310 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - [PID]15540
+2024-12-26T14:09:48,311 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:48,312 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:48,314 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9007).
+2024-12-26T14:09:48,317 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:48,319 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - [PID]1432
+2024-12-26T14:09:48,319 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:48,320 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:48,324 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9006).
+2024-12-26T14:09:48,331 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:48,337 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:48,346 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:48,346 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:48,347 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:48,348 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:48,349 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:48,352 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:48,353 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:48,353 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:48,353 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:48,354 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:48,354 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,355 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:48,355 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:48,355 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:48,355 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:48,355 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:48,355 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:48,355 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,355 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:48,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:48,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:48,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:48,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:48,361 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,362 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:48,745 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9005
+2024-12-26T14:09:48,768 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:48,769 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - [PID]17296
+2024-12-26T14:09:48,769 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:48,770 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:48,773 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9005).
+2024-12-26T14:09:48,790 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:48,805 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:48,805 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:48,806 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:48,806 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:48,807 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:48,813 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:48,814 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:50,863 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-12-26T14:09:50,883 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:50,885 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:50,886 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9001
+2024-12-26T14:09:50,886 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9002
+2024-12-26T14:09:50,902 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:50,903 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:50,903 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:50,903 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:50,903 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:50,904 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:50,904 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:50,904 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:50,906 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:50,907 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:50,908 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:50,908 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:50,908 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:50,908 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:50,908 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:50,908 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:51,039 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9004
+2024-12-26T14:09:51,059 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:51,060 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:51,060 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:51,061 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:51,061 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:51,061 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:51,061 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:51,061 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:51,063 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9003
+2024-12-26T14:09:51,083 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:09:51,084 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:09:55,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9007
+2024-12-26T14:09:55,729 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:55,730 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - [PID]9728
+2024-12-26T14:09:55,730 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:55,731 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:55,736 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9007).
+2024-12-26T14:09:55,751 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:55,765 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:55,765 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:55,766 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:55,767 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:55,767 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:55,772 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:55,773 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:55,843 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9006
+2024-12-26T14:09:55,866 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:55,868 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - [PID]19344
+2024-12-26T14:09:55,868 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:55,869 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:55,873 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9006).
+2024-12-26T14:09:55,889 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:55,904 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:55,905 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:55,905 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:55,907 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:55,907 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:55,918 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:55,918 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:55,918 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:55,919 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:09:56,258 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9005
+2024-12-26T14:09:56,277 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:09:56,278 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - [PID]12360
+2024-12-26T14:09:56,278 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:09:56,279 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:09:56,282 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9005).
+2024-12-26T14:09:56,298 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:09:56,313 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:09:56,313 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:09:56,314 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:09:56,315 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:09:56,316 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:09:56,321 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:09:56,321 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:09:56,321 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:09:56,321 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:09:56,322 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:10:00,056 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9001
+2024-12-26T14:10:00,081 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:10:00,083 [INFO ] W-9001-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:10:00,195 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9000
+2024-12-26T14:10:00,201 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9004
+2024-12-26T14:10:00,219 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:10:00,220 [INFO ] W-9000-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:10:00,228 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:00,229 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:00,229 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:00,229 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:00,231 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:00,231 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:10:00,231 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:10:00,231 [INFO ] W-9004-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:10:00,250 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9002
+2024-12-26T14:10:00,273 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:00,275 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:00,275 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:00,275 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:00,276 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:00,276 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:10:00,276 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:10:00,276 [INFO ] W-9002-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:10:00,414 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9003
+2024-12-26T14:10:00,440 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 251, in run_server
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG -     self.sock.bind((self.sock_name, int(self.port)))
+2024-12-26T14:10:00,442 [INFO ] W-9003-crop_model_1.0-stdout MODEL_LOG - PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+2024-12-26T14:10:04,666 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9007
+2024-12-26T14:10:04,680 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:04,681 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - [PID]18996
+2024-12-26T14:10:04,681 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:10:04,682 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:10:04,684 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9007).
+2024-12-26T14:10:04,688 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:10:04,698 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:10:04,698 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:10:04,699 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:10:04,700 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:10:04,701 [WARN ] W-9007-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:10:04,705 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:04,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:04,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:04,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:04,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:10:04,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:10:04,706 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:10:04,707 [INFO ] W-9007-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:10:04,713 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9006
+2024-12-26T14:10:04,731 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:04,732 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - [PID]1476
+2024-12-26T14:10:04,732 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:10:04,732 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:10:04,738 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9006).
+2024-12-26T14:10:04,740 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:10:04,751 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:10:04,752 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:10:04,752 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:10:04,754 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:10:04,755 [WARN ] W-9006-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:10:04,760 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:04,760 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:04,760 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:04,761 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:04,761 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:10:04,761 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:10:04,761 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:10:04,761 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:10:04,761 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:10:04,762 [INFO ] W-9006-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
+2024-12-26T14:10:05,042 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Listening on addr:port: 127.0.0.1:9005
+2024-12-26T14:10:05,059 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Successfully loaded C:\Users\KIIT\anaconda3\Lib\site-packages/ts/configs/metrics.yaml.
+2024-12-26T14:10:05,060 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - [PID]10292
+2024-12-26T14:10:05,061 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch worker started.
+2024-12-26T14:10:05,061 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.7
+2024-12-26T14:10:05,065 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9005).
+2024-12-26T14:10:05,066 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - model_name: crop_model, batchSize: 1
+2024-12-26T14:10:05,078 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2024-12-26T14:10:05,079 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-12-26T14:10:05,079 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-12-26T14:10:05,080 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG - C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py:12: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+2024-12-26T14:10:05,080 [WARN ] W-9005-crop_model_1.0-stderr MODEL_LOG -   self.model = torch.load(model_path)
+2024-12-26T14:10:05,083 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-12-26T14:10:05,083 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-12-26T14:10:05,083 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 301, in <module>
+2024-12-26T14:10:05,083 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-12-26T14:10:05,083 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 268, in run_server
+2024-12-26T14:10:05,083 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 196, in handle_connection
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -                             ^^^^^^^^^^^^^^^^^^^^
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_service_worker.py", line 133, in load_model
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\anaconda3\Lib\site-packages\ts\model_loader.py", line 143, in load
+2024-12-26T14:10:05,084 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-12-26T14:10:05,085 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -   File "C:\Users\KIIT\AppData\Local\Temp\models\6573cb1547fa4d48ae9acf4031f99e97\custom_handler.py", line 13, in initialize
+2024-12-26T14:10:05,085 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     self.model.eval()
+2024-12-26T14:10:05,085 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG -     ^^^^^^^^^^^^^^^
+2024-12-26T14:10:05,085 [INFO ] W-9005-crop_model_1.0-stdout MODEL_LOG - AttributeError: 'collections.OrderedDict' object has no attribute 'eval'
